@@ -1,0 +1,89 @@
+margin-reset(n=0)
+ margin n
+ 
+padding-reset(n=0)
+ padding n 
+
+border-reset()
+ border none
+ 
+edge-reset(m=0, p=0)
+ margin-reset(m)
+ padding-reset(p)
+
+centered(n= 50%)
+ margin-left auto
+ margin-right auto
+ display block
+ width n
+
+alpha-color(n = .5, c=#AEAEAE)
+ rgba(red(c), green(c), blue(c), n)
+ 
+horizontal-margin(n=10px)
+ margin-left n 
+ margin-right n
+
+vertical-margin(n=10px)
+ margin-top n 
+ margin-bottom n
+
+vertical-padding(n=10px)
+ padding-top n 
+ padding-bottom n
+
+
+// Borders
+bottom-solid-border(n=3px, c=#40495A)
+ border-bottom c 
+ border-bottom-style solid
+ border-bottom-width n
+
+top-solid-border(n=3px, c=#40495A)
+ border-top c 
+ border-top-style solid
+ border-top-width n 
+
+left-solid-border(n=3px, c=#40495A)
+ border-left c 
+ border-left-style solid
+ border-left-width n 
+
+appearance-reset()
+ -webkit-appearance none
+
+ 
+bold-font()
+ font-family Open Sans
+ font-weight 700
+
+light-font()
+ font-family Open Sans
+ font-weight 300
+
+normal-font()
+ font-family Open Sans
+ font-weight 400
+
+post-thumbnail()
+ @media screen and (min-width: $brklrg)
+  width $thumb-lrg
+  height $thumb-lrg
+ @media screen and (min-width: $brkmed) and (max-width: $brklrg)
+  width $thumb-med
+  height $thumb-med
+ @media screen and (min-width: $brksml) and (max-width: $brkmed)
+  width $thumb-sml
+  height $thumb-sml
+  
+horizontal-list()
+ padding-reset()
+ margin-reset()
+ ul
+  list-style-type none
+  padding-reset()
+  margin-reset()
+  li 
+   display inline 
+   a 
+    text-decoration none

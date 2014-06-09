@@ -1,0 +1,13 @@
+{
+  "name": "CSI_Development_WP_Theme",
+  "version": "0.0.0",
+  "dependencies": {
+    "json3": "~3.2.6",
+    "es5-shim": "~2.1.0",
+    "masonry": "~3.1.5",
+    "handlebars": "~1.3.0"
+  },
+  "devDependencies": {
+    "handlebars": "~1.3.0"
+  }
+}

@@ -1,0 +1,27 @@
+//Frameworks/Libraries/Extensions/Plugins
+@import 'jeet'
+@import 'nib'
+
+//Utilities & Mixins
+@import 'config.styl'
+@import 'mixins.styl'
+
+
+
+global-reset()
+
+
+#marquee-container
+ width $marqWidth
+ center()
+ height 200px
+ overflow hidden
+
+
+  
+
+#marquee-content
+ -webkit-backface-visibility none
+ li 
+  display inline
+ 
