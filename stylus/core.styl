@@ -11,19 +11,37 @@
 global-reset()
 
 
-#marquee-container
- width $marqWidth
- center()
+
+html
+ height 100%
+
+.marquee-container
  overflow hidden
+ center()
+ position relative
+
+.marquee-scroll
+ background alpha-color(.5, black)
+ width 2.7%
+ height 100%
+ z-index 1
+ position absolute
+ &.right 
+  right 0
+ &.left 
+  left 0
 
 
-  
-
-#marquee-content
+.marquee-content
  -webkit-backface-visibility none
- border-style none
+ position relative
+ height 100%
  li 
   display inline
-  img
-   border-style none
+  position relative
+  height 100%
+  
+  
+  
+
  
